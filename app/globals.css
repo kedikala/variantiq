@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    font-size: 15px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    @apply h-full bg-brand-bg;
+  }
+
+  body {
+    @apply min-h-full bg-brand-bg font-sans text-brand-text;
+  }
+
+  .font-display {
+    line-height: 1.16;
+    padding-bottom: 0.08em;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    @apply border-brand-border;
+  }
+}
